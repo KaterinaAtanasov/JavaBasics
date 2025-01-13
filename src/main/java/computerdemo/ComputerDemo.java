@@ -4,7 +4,7 @@ public class ComputerDemo {
         public static void main(String[] args) {
             // Creating two Computer objects
             Computer computer1 = new Computer(2022, 1200.0, true, 1000.0, 80.0, "Windows 11");
-            Computer computer2 = new Computer(2020, 800.0, false,500.0, 250, "OS");
+            Computer computer2 = new Computer(2020, 800.0, false,500.0, 250, "iOS");
 
             // Using memory on computer1 (attempting to use more memory than available)
             computer2.useMemory(300.0);
