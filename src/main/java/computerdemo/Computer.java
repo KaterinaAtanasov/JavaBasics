@@ -40,11 +40,15 @@ public class Computer {
 
     // Method to use memory
     public void useMemory(double memory) {
-        this.freeMemory -= memory;
-        if (this.freeMemory < 0) {
+        if (memory < 0) {
+            System.out.println("Memory to use cannot be negative!");
+        } else if (memory > this.freeMemory) {
             System.out.println("Not enough free memory!");
-            this.freeMemory = 0;
+        } else {
+            this.freeMemory -= memory;
         }
     }
+
+
 
 }
